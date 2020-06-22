@@ -6,12 +6,6 @@ import ContactMe from './ContactMe';
 import Footer from './Footer';
 
 class App extends Component {
-  state = {
-    navbarMove: false,
-  };
-
-  onScroll = (event) => {};
-
   render() {
     return (
       <div>
