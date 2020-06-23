@@ -14,7 +14,7 @@ import { faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons';
 
 const ContactMe = () => {
   return (
-    <section className='contact-me-section'>
+    <section id='contact-me' className='contact-me-section'>
       <div className='contact-me-header'>
         <h2>Contact Me</h2>
         <h3>I am available for hire and open to any ideas of cooperation.</h3>

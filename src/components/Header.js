@@ -1,17 +1,49 @@
 import React from 'react';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   return (
-    <div>
+    <section id='header'>
       <nav className='nav'>
         <div className='logo'>
           {/* Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a> */}
           <img className='logo-image' alt='logo' src='./logo.png' />
         </div>
+
         <ul className='nav-items'>
-          <li>ABOUT </li>
-          <li>PORTFOLIO</li>
-          <li>CONTACT ME</li>
+          <li>
+            <Link
+              activeClass='active'
+              spy={true}
+              to='about'
+              smooth={true}
+              duration={1000}
+            >
+              ABOUT
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass='active'
+              spy={true}
+              to='portfolio'
+              smooth={true}
+              duration={1000}
+            >
+              PORTFOLIO
+            </Link>
+          </li>
+          <li>
+            <Link
+              activeClass='active'
+              spy={true}
+              to='contact-me'
+              smooth={true}
+              duration={1000}
+            >
+              CONTACT ME
+            </Link>
+          </li>
         </ul>
       </nav>
       <header>
@@ -22,7 +54,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </div>
+    </section>
   );
 };
 

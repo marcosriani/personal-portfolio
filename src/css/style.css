@@ -408,8 +408,8 @@ body {
 }
 
 .project-full-detail {
-  max-width: 50%;
-  max-height: 90%;
+  max-width: 700px;
+  max-height: 770px;
   background-color: rgb(253, 253, 253);
   position: absolute;
   top: 0;
@@ -423,7 +423,7 @@ body {
 
 .project-full-detail {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 36px;
   border: 1px solid rgba(58, 58, 58, 0.582);
   -webkit-box-shadow: -1px 3px 49px -13px rgb(82, 82, 82);
   -moz-box-shadow: -1px 3px 49px -13px rgb(82, 82, 82);
@@ -478,6 +478,12 @@ body {
   outline: none;
   display: block;
   float: right;
+}
+
+.close-button::after {
+  content: '';
+  clear: both;
+  display: block;
 }
 
 /* Contact Me */

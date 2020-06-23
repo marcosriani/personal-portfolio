@@ -3,7 +3,7 @@ import PortfolioItems from './PortfolioItems';
 
 const Portfolio = ({ show, onShowDetails }) => {
   return (
-    <section className='portfolio-section'>
+    <section id='portfolio' className='portfolio-section'>
       <div className='portfolio-header'>
         <h2>Portfolio</h2>
         <h3>Click on the image to see the project description.</h3>
